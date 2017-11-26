@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+<style>
+body {background-color: black;}
+h1   {color: red;}
+h2	 {color: white;}
+h3	 {color: white;}
+p    {color: white;}
+
+h3.title{
+	text-align: center;
+}
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+ p.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em
+}
+
+</style>
+</head>
+<body>
+<h1>DATA COMMUNICATION PROJECT:<h1>
+<h2> Go-back-N ARQ Simulation </h2>
+
+<h3 class = "title">Good Transmisson</h3>   
+<img class="displayed" src="GoodTransmissionDone.gif" alt="GoodTransmission" width="450" height="350">
+<p class="blocktext">This is a simulation of a good transmission with no errors.</p>
+
+
+
+<h3 class = "title"> Damaged Frame </h3>
+<img class="displayed" src="DamagedFrameDone.gif" alt="DamagedFrameTransmission" width="450" height="350">
+<p class="blocktext">In this Simulation of a damaged frame of Go-Back-N ARQ the frame 0 is damaged and a REJ is sent and once it recieves this it resends the frame that was damaged again. Using the free version of animator software to create the gif I was only able to create 10 second clips and the last RR that is sent is RR4 and is cut off in the gif. </p>
+
+
+
+<h3 class = "title" > Damaged RR type A</h3>
+<img class="displayed" src="DamagedRRTypeA.gif" alt="DamagedRRTypeA" width="450" height="350">
+<p class="blocktext">In this simulation a RR packet is damaged during trasmission and it just continues transmission due to the fact that RR packets are cumulative</p>
+
+
+
+<h3 class = "title"> Damaged RR type B</h3>
+<img class="displayed"  src="RRTypeB.gif" alt="DamagedRRTypeB" width="450" height="350">
+<p class="blocktext"> In this simulation a RR packet is damaged but during its transmit, so if it is not recieved during a time frame it goes and sends out another RR. Due to the Gif only being allowed to be 10 seconds with the software I am using the timer counts down from 5 really quickly but it does in fact count down.</p>
+
+
+
+<h3 class = "title">Damaged REJ</h3>
+<img class="displayed" src="DamagedREJDone.gif" alt="DamagedREJ" width="450" height="350">
+<p class="blocktext"> In this simulation we have a damaged REJ and when the timer expires we then send a RR bit with its Pbit = 1 and with data on which frame it needs to retrasmit. Again due to the software my Timer that counts down 5 seconds is sped up since each gif is allowed to only be ten seconds. but it does count down from 5 to 1 and then sends the frame that was damaged again.</p>
+</body>
+</html>
